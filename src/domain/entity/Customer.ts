@@ -1,7 +1,14 @@
-import { PersonAbstract } from "../domain/PersonAbstract";
+import { PersonInterface } from "./PersonInterface";
 
-export  class Customer implements PersonAbstract{
+export  class Customer  implements  PersonInterface  {
     
+    private _id: number = 0;
+    public get id(): number {
+        return this._id;
+    }
+    public set id(value: number) {
+        this._id = value;
+    }
     private _firstName: string="";
     public get firstName(): string {
         return this._firstName;
@@ -23,7 +30,6 @@ export  class Customer implements PersonAbstract{
     public set age(value: number) {
         this._age = value;
     }
-
-
+    
 
 }

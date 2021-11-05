@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && jest ./dist --forceExit"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.3.1",
+    "typescript": "^4.4.4"
+  }
 }
