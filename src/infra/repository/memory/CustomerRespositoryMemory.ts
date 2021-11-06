@@ -36,4 +36,8 @@ export class CustomerRespositoryMemory implements CustomerRepositoryInterface{
         return customer;
     }
 
+    findAll() :Customer[]{
+        return this.customers;
+    }
+
 }

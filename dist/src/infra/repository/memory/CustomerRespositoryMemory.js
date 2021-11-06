@@ -29,5 +29,8 @@ class CustomerRespositoryMemory {
         let [customer] = this.customers.filter(customer => { return customer.id === customerId; });
         return customer;
     }
+    findAll() {
+        return this.customers;
+    }
 }
 exports.CustomerRespositoryMemory = CustomerRespositoryMemory;

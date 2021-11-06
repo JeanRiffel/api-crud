@@ -5,4 +5,5 @@ export  interface CustomerRepositoryInterface {
     delete( customer : Customer ) : boolean;
     update( customerId : number, fields : string [] , values : string [] ) : boolean;
     findById( customerId : number ) : Customer; 
+    findAll() :Customer[];
 }
